@@ -23,8 +23,14 @@ nav {
   width: 100px;
 }
 .nav-address {
+  display: flex;
+  align-items: center;
   color: white;
   cursor: pointer;
+}
+.address-icon {
+  margin-right: 5px;
+  font-size: 20px;
 }
 .address-first {
   font-size: 12px;
@@ -37,11 +43,16 @@ nav {
 .nav-search {
   display: flex;
   flex: 1;
+  margin: 0 20px;
+  height: 40px;
 }
 .nav-search select {
+  width: 60px;
   padding: 10px;
   border: none;
   background: #f3f3f3;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
 }
 .nav-search input {
   flex: 1;
@@ -49,6 +60,7 @@ nav {
   border: none;
   outline: none;
   font-size: 16px;
+  padding-left: 10px;
 }
 .nav-search button {
   width: 50px;
@@ -66,4 +78,53 @@ nav {
   color: white;
   cursor: pointer;
   gap: 5px;
+}
+.nav-language img {
+  width: 20px;
+}
+.nav-signin {
+  color: white;
+  cursor: pointer;
+}
+.small-text {
+  font-size: 12px;
+}
+.large-text {
+  font-weight: bold;
+  font-size: 14px;
+}
+.nav-orders {
+  color: white;
+  cursor: pointer;
+}
+.nav-cart {
+  display: flex;
+  align-items: end;
+  color: white;
+  cursor: pointer;
+  gap: 5px;
+}
+.nav-cart i {
+  font-size: 30px;
+}
+.nav-cart span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav-logo,
+.nav-address,
+.nav-language,
+.nav-signin,
+.nav-orders,
+.nav-cart {
+  border: 1px solid transparent;
+  padding: 8px;
+}
+.nav-logo:hover,
+.nav-address:hover,
+.nav-language:hover,
+.nav-signin:hover,
+.nav-orders:hover,
+.nav-cart:hover {
+  border: 1px solid white;
 }

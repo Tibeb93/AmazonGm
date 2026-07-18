@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon Website</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -13,8 +18,13 @@
           <img src="images/amazon-logo.png" alt="Amazon Logo" />
         </div>
         <div class="nav-address">
-          <p class="address-first">Deliver to</p>
-          <p class="address-second">Ethiopia</p>
+          <div class="address-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="address-text">
+            <p class="address-first">Deliver to</p>
+            <p class="address-second">Ethiopia</p>
+          </div>
         </div>
         <div class="nav-search">
           <div class="nav-search">
@@ -51,7 +61,7 @@
 
             <input type="text" placeholder="Search Amazon" />
 
-            <button>🔍</button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
         </div>
         <div class="nav-language">
@@ -60,6 +70,21 @@
           <span>EN</span>
 
           <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="nav-signin">
+          <p class="small-text">Hello, Sign in</p>
+
+          <p class="large-text">Account & Lists</p>
+        </div>
+        <div class="nav-orders">
+          <p class="small-text">Returns</p>
+
+          <p class="large-text">& Orders</p>
+        </div>
+        <div class="nav-cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <span>Cart</span>
         </div>
       </nav>
     </header>
