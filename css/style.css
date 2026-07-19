@@ -16,6 +16,20 @@ nav {
   gap: 15px;
   padding: 10px 20px;
 }
+nav {
+  gap: 15px;
+}
+nav {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 10px 20px;
+
+  background: #131921;
+}
 .nav-logo {
   cursor: pointer;
 }
@@ -68,6 +82,17 @@ nav {
   background: #febd69;
   cursor: pointer;
   font-size: 18px;
+  border-radius: 0 5px 5px 0;
+}
+.nav-search button i {
+  font-size: 18px;
+
+  color: #131921;
+}
+.nav-search:focus-within {
+  outline: 3px solid orange;
+
+  border-radius: 8px;
 }
 .nav-search button:hover {
   background: #f3a847;
@@ -127,4 +152,32 @@ nav {
 .nav-orders:hover,
 .nav-cart:hover {
   border: 1px solid white;
+}
+.nav-logo:hover,
+.nav-address:hover,
+.nav-language:hover,
+.nav-signin:hover,
+.nav-orders:hover,
+.nav-cart:hover {
+  border: 1px solid white;
+}
+.nav-logo,
+.nav-address,
+.nav-language,
+.nav-signin,
+.nav-orders,
+.nav-cart {
+  transition: 0.3s;
+}
+.address-first {
+  color: #cccccc;
+}
+.address-second {
+  color: white;
+}
+.small-text {
+  color: #dddddd;
+}
+.large-text {
+  color: white;
 }
